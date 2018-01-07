@@ -1,0 +1,12 @@
+DEPENDENCIES
+  example
+    path: .
+    metadata: true
+  selinux_policy (~> 2.0.1)
+
+GRAPH
+  compat_resource (12.19.0)
+  example (1.0.0)
+    selinux_policy (>= 0.0.0)
+  selinux_policy (2.0.1)
+    compat_resource (>= 12.16.3)

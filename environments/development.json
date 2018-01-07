@@ -1,0 +1,17 @@
+{
+    "name": "development",
+    "description": "for development",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "default_attributes": {
+        "example": {
+            "mode": "dev",
+            "db_ip": "192.168.33.10"
+        }
+    },
+    "override_attributes": {
+    },
+    "cookbook_versions": {
+        "example": "= 1.0.0"
+    }
+}

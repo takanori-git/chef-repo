@@ -1,0 +1,14 @@
+{
+    "name": "web_role",
+    "description": "for web server",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+    },
+    "override_attributes": {
+    },
+    "run_list": [
+        "recipe[example]",
+        "recipe[example::php]"
+    ]
+}

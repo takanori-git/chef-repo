@@ -1,0 +1,13 @@
+{
+    "name": "db_role",
+    "description": "for detabase server",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+    },
+    "override_attributes": {
+    },
+    "run_list": [
+        "recipe[example::mysql]"
+    ]
+}

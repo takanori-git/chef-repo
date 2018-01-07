@@ -1,0 +1,17 @@
+{
+    "name": "production",
+    "description": "for production",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "default_attributes": {
+        "example": {
+            "mode": "prod",
+            "db_ip": "192.168.33.13"
+        }
+    },
+    "override_attributes": {
+    },
+    "cookbook_versions": {
+        "example": "= 1.0.0"
+    }
+}
