@@ -18,11 +18,18 @@ end
 # 3. Apache httpdとPHPのインストール
 %w[
   httpd
+  git
+].each do |pkg|
+  package "#{pkg}" do
+    action :install
+  end
+end
+
+%w[
   php
   php-mbstring
   php-pdo
   php-mysql
-  git
 ].each do |pkg|
   package "#{pkg}" do
     action :install
